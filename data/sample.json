@@ -1,0 +1,9 @@
+{
+  "event_id": "092108-003-sample-001",
+  "event_type": "SUBMISSION_RECEIVED",
+  "aggregate_type": "submission",
+  "aggregate_id": "yellow_river_media_intake-001",
+  "occurred_at": "2026-09-20T18:00:00+08:00",
+  "version": 1,
+  "summary": "登记黄河影像征集核验的首条领域记录"
+}
