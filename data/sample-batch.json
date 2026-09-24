@@ -1,0 +1,73 @@
+{
+  "requestId": "req-sample-001",
+  "records": [
+    {
+      "event_id": "evt-sample-001",
+      "event_type": "WORK_REGISTERED",
+      "aggregate_type": "work",
+      "aggregate_id": "work-hh-001",
+      "occurred_at": "2026-09-21T09:00:00+08:00",
+      "version": 1,
+      "summary": "登记作品：黄河壶口航拍",
+      "payload": {
+        "workId": "work-hh-001",
+        "title": "黄河壶口航拍",
+        "digest": "digest-hh-001",
+        "submissionId": "sub-hh-001"
+      }
+    },
+    {
+      "event_id": "evt-sample-002",
+      "event_type": "CLIP_REGISTERED",
+      "aggregate_type": "media_clip",
+      "aggregate_id": "clip-hh-001",
+      "occurred_at": "2026-09-21T09:01:00+08:00",
+      "version": 1,
+      "summary": "登记片段：壶口全景",
+      "payload": {
+        "clipId": "clip-hh-001",
+        "workId": "work-hh-001",
+        "digest": "digest-clip-001",
+        "submissionId": "sub-hh-001",
+        "requiresConsent": true,
+        "flags": { "hasMinor": false, "sensitiveGeo": false }
+      }
+    },
+    {
+      "event_id": "evt-sample-003",
+      "event_type": "DECLARATION_SUBMITTED",
+      "aggregate_type": "declaration",
+      "aggregate_id": "decl-hh-001",
+      "occurred_at": "2026-09-21T09:02:00+08:00",
+      "version": 1,
+      "summary": "投稿人声明：出镜人物同意",
+      "payload": {
+        "declarationId": "decl-hh-001",
+        "workId": "work-hh-001",
+        "clipIds": ["clip-hh-001"],
+        "dtype": "PORTRAIT_CONSENT",
+        "digest": "digest-decl-001",
+        "submissionId": "sub-hh-001"
+      }
+    },
+    {
+      "event_id": "evt-sample-004",
+      "event_type": "CREDENTIAL_SUBMITTED",
+      "aggregate_type": "rights_credential",
+      "aggregate_id": "cred-hh-001",
+      "occurred_at": "2026-09-21T09:03:00+08:00",
+      "version": 1,
+      "summary": "权利凭证：航拍授权书",
+      "payload": {
+        "credentialId": "cred-hh-001",
+        "workId": "work-hh-001",
+        "partner": "航拍团队甲",
+        "scope": { "purposes": ["broadcast"], "territories": ["CN"] },
+        "validFrom": "2026-01-01T00:00:00+08:00",
+        "validTo": "2027-01-01T00:00:00+08:00",
+        "digest": "digest-cred-001",
+        "submissionId": "sub-hh-001"
+      }
+    }
+  ]
+}

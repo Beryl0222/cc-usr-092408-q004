@@ -23,7 +23,25 @@
         "EVIDENCE_REQUESTED",
         "RIGHTS_CLEARED",
         "ASSET_EDITED",
-        "VARIANT_PUBLISHED"
+        "VARIANT_PUBLISHED",
+        "WORK_REGISTERED",
+        "CLIP_REGISTERED",
+        "DECLARATION_SUBMITTED",
+        "CREDENTIAL_SUBMITTED",
+        "REDACTION_REGISTERED",
+        "ASSOCIATION_SUGGESTED",
+        "MERGE_DECIDED",
+        "CLIP_REPLACED",
+        "REVIEW_REQUESTED",
+        "REVIEW_RESOLVED",
+        "BASIS_FROZEN",
+        "PUBLICATION_REJECTED",
+        "CONSENT_WITHDRAWN",
+        "CREDENTIAL_WITHDRAWN",
+        "DISPOSITION_RECORDED",
+        "CREDENTIAL_CONFIRMED",
+        "WITHDRAWAL_NOTIFIED",
+        "RECORD_QUARANTINED"
       ]
     },
     "aggregate_type": {
@@ -32,7 +50,15 @@
         "submission",
         "media_asset",
         "rights_record",
-        "publication_variant"
+        "publication_variant",
+        "work",
+        "media_clip",
+        "declaration",
+        "rights_credential",
+        "redacted_variant",
+        "association",
+        "publication",
+        "quarantine"
       ]
     },
     "aggregate_id": {
