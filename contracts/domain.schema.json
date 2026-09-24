@@ -19,19 +19,47 @@
     "event_type": {
       "type": "string",
       "enum": [
+        "BATCH_RECEIVED",
         "SUBMISSION_RECEIVED",
+        "WORK_REGISTERED",
+        "CLIP_REGISTERED",
+        "DECLARATION_RECORDED",
+        "CREDENTIAL_RECORDED",
+        "WORKS_ASSOCIATED",
+        "WORKS_MERGED",
+        "WORK_QUARANTINED",
+        "WORK_QUARANTINE_RESOLVED",
         "EVIDENCE_REQUESTED",
+        "VERIFICATION_REQUESTED",
+        "VERIFICATION_ASSIGNED",
+        "VERIFICATION_APPROVED",
+        "VERIFICATION_REJECTED",
         "RIGHTS_CLEARED",
+        "PARTNER_CONFIRMATION_REQUESTED",
+        "PARTNER_CONFIRMED",
+        "PARTNER_DECLINED",
+        "PUBLICATION_BASIS_FROZEN",
+        "PUBLICATION_RELEASED",
+        "CONSENT_WITHDRAWN",
+        "POST_PUBLICATION_ACTION_APPENDED",
         "ASSET_EDITED",
+        "CLIP_REPLACED",
+        "SANITIZED_VARIANT_CREATED",
         "VARIANT_PUBLISHED"
       ]
     },
     "aggregate_type": {
       "type": "string",
       "enum": [
+        "processing_batch",
         "submission",
-        "media_asset",
+        "work",
+        "media_clip",
+        "declaration",
         "rights_record",
+        "verification_case",
+        "publication_basis",
+        "publication",
         "publication_variant"
       ]
     },
@@ -50,6 +78,12 @@
     "summary": {
       "type": "string",
       "minLength": 1
+    },
+    "request_id": {
+      "type": "string"
+    },
+    "payload": {
+      "type": "object"
     }
   },
   "additionalProperties": true

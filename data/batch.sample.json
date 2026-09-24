@@ -1,0 +1,72 @@
+{
+  "batch_id": "batch-sample-001",
+  "records": [
+    {
+      "submission_id": "sub-2026-0001",
+      "work": {
+        "work_id": "work-huanghe-aerial-01",
+        "title": "黄河壶口航拍·晨",
+        "content_summary": "壶口瀑布清晨航拍，含两名游客远景",
+        "submitter": "投稿人甲",
+        "clips": [
+          {
+            "clip_id": "clip-aerial-01",
+            "kind": "footage",
+            "label": "主航拍",
+            "has_minor": false,
+            "has_sensitive_geo": false,
+            "consent_scope": "granted"
+          },
+          {
+            "clip_id": "clip-aerial-02",
+            "kind": "footage",
+            "label": "观景台人群",
+            "has_minor": true,
+            "has_sensitive_geo": false,
+            "consent_scope": "granted"
+          }
+        ],
+        "declarations": [
+          { "declaration_id": "decl-0001", "statement": "本人原创，画面中人物已获授权" }
+        ],
+        "credentials": [
+          {
+            "credential_id": "lic-0001",
+            "credential_type": "license",
+            "scope": ["web", "broadcast"],
+            "territory": "CN",
+            "valid_from": "2026-01-01T00:00:00+08:00",
+            "valid_until": "2027-06-30T00:00:00+08:00",
+            "partner": "航拍合作方A"
+          }
+        ],
+        "variants": [
+          { "variant_id": "var-0001", "source_clip_id": "clip-aerial-02", "redaction": "face_blur" }
+        ]
+      }
+    },
+    {
+      "submission_id": "sub-2026-0002",
+      "work": {
+        "work_id": "work-huanghe-aerial-02",
+        "title": "黄河壶口航拍·晨（另一投稿人）",
+        "content_summary": "壶口瀑布清晨航拍，含两名游客远景",
+        "submitter": "投稿人乙",
+        "clips": [
+          {
+            "clip_id": "clip-aerial-03",
+            "kind": "footage",
+            "label": "主航拍",
+            "consent_scope": "unknown"
+          }
+        ],
+        "declarations": [],
+        "credentials": []
+      }
+    },
+    {
+      "submission_id": "sub-2026-0003",
+      "work": { "work_id": "work-broken" }
+    }
+  ]
+}
